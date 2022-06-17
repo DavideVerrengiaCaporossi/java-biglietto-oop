@@ -22,23 +22,23 @@ public class Biglietto {
 	
 	
 	
-	
+	// serve per poter leggere le variabili dall'esterno
 	public double getKilometri() {
 		return kilometri;
 	}
-
+	//serve per poter modificare le variabili dall'esterno
 	public void setKilometri(double kilometri) {
 		this.kilometri = kilometri;
 	}
-
+	// serve per poter leggere le variabili dall'esterno
 	public int getEta() {
 		return eta;
 	}
-
+	//serve per poter modificare le variabili dall'esterno
 	public void setEta(int eta) {
 		this.eta = eta;
 	}
-	
+	//metodo che serve a calcolare il prezzo totale e il prezzo totale coni vari sconti
 	public double prezzoTotale() {
 		
 	double calcoloPrezzo = kilometri * 0.21 ;
@@ -52,6 +52,7 @@ public class Biglietto {
 	
 	
 	}
+	// metodo che formatta il prezzo totale
 	public String formattaPrezzo () {
 		return df.format(prezzoTotale());
 	}
